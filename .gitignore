@@ -1,0 +1,7 @@
+node_modules/
+assets-src/
+dist/
+game.js
+game.js.map
+*.zip
+zombie-killer.html

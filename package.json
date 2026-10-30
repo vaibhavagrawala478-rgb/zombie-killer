@@ -1,0 +1,20 @@
+{
+  "name": "zombie-killer",
+  "version": "1.0.0",
+  "description": "Zombie Killer - buy guns, sell gems, survive.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "three": "^0.186.1"
+  },
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --format=iife --outfile=game.js --minify --target=es2020",
+    "dev": "esbuild src/main.js --bundle --format=iife --outfile=game.js --sourcemap --target=es2020",
+    "start": "node serve.mjs",
+    "dist": "node tools/build-dist.mjs",
+    "assets": "node tools/fetch-assets.mjs"
+  }
+}
